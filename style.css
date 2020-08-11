@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eceef1;
+    color: #ffffff;
+}
+
+.container {
+    width: 500px;
+    margin: 20px auto;
+    user-select: none;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    border-color: orange;
+}
+
+.header {
+    background-color: #cfcfd4;
+    text-align: center;
+    padding: 1.75rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.footer {
+    background-color: #b9bbc2;
+    height: 30px;
+    border-top: 1px solid #cfcfd4;
+}
+
+.header h1 {
+    font-size: 2.25rem;
+}
+
+.date {
+    background-color: rgb(253, 247, 247);
+    text-align: right;
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem 0.75rem 0;
+}
+
+ul.currencies {
+    background-color: #ffffff;
+    border: 0.5px solid #b9bbc2;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    height: calc(100vh - 40px - 100px - 40px - 58px);
+    background-color: rgb(241, 238, 238);
+    padding: 0 1.5rem 1rem 1.5rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow-y: auto;
+}
+
+ul.currencies li {
+    background-color: #f4f4fc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+ul.currencies li:last-child {
+    margin-bottom: 0;
+}
+
+ul.currencies li.base-currency {
+    background-color: #264d73;
+}
+
+.flag {
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(153, 150, 150);
+    vertical-align: top;
+}
+
+.info {
+    display: inline-block;
+}
+
+.info .input span {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+}
+
+.info .input input {
+    font-size: 1.5rem;
+    width: 78%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: rgb(202, 197, 197);
+    padding: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.add-currencies-btn {
+    background-color: rgb(10, 10, 87);
+}
+
+.add-currency-btn {
+    background-color: blue;
+    color: #ffffff;
+}
+
+.info .currency-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+}
+
+.info .base-currency-rate {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
+
+ul.currencies li .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+ul.currencies li .close:hover {
+    color: #fff;
+}
+
+/* Scrollbar */
+
+ul.currencies::-webkit-scrollbar {
+    width: 5px;
+}
+
+ul.currencies::-webkit-scrollbar-thumb {
+    background-color: #2d2d37;
+    border-bottom: 1rem solid #222;
+}
+
+ul.add-currency-list {
+    position: absolute;
+    bottom: 54px;
+    left: 105%;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100%;
+    height: calc(100vh - 40px - 100px - 55px);
+    overflow-y: auto;
+    transition: all 0.25s;
+}
+
+ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.add-currency-list li.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.add-currency-btn {
+    background-color: #210488;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    position: relative;
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: #7a7a7a;
+    text-align: center;
+    padding: 1.75rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.add-currencies-btn:hover {
+    background-color: rgb(60, 60, 146);
+    color: white;
+}
+
+#stock-search {
+    background-color: rgb(10, 10, 87);
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition-duration: 0.4s;
+}
+
+#stock-search:hover {
+    background-color: rgb(60, 60, 146);
+    color: white;
+}
+
+.add-currency-btn i {
+    position: absolute;
+    top: 0.6rem;
+    left: 30%;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.add-currency-btn.open {
+    background-color: #7a7a7a;
+}
+
+.add-currency-btn.open i {
+    opacity: 1;
+    left: 1.25rem;
+}
+
+.add-currency-btn.open + ul.add-currency-list {
+    left: 0;
+}
+
+.add-currency-btn.open + ul.add-currency-list li:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    ul.currencies {
+        height: calc(100vh - 83px - 34px - 51px);
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .flag {
+        width: 3rem;
+        height: 2rem;
+    }
+    .info .input span {
+        font-size: 1.25rem;
+        width: 3.5rem;
+    }
+    .info .input input {
+        font-size: 1.25rem;
+        width: 76%;
+    }
+    .info .currency-name {
+        margin-left: 3.5rem;
+    }
+    .info .base-currency-rate {
+        margin-left: 3.5rem;
+    }
+    ul.add-currency-list {
+        bottom: 48px;
+        height: calc(100vh - 80px - 51px);
+    }
+    .add-currency-btn i {
+        left: 25%;
+        top: 0.65rem;
+    }
+}
+
+.container-crypto {
+    background: #ececec none;
+    border: 1px solid #d5d4d4;
+    height: 30px;
+    margin: 0 auto;
+    width: 928px;
+}
+
+.container .wrap {
+    width: 920px;
+    left: 5px;
+    top: 0px;
+    overflow: hidden;
+    position: relative;
+    line-height: 30px;
+    font-size-adjust: none;
+}
+
+div.stockTicker {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+div.stockTicker span.quote {
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+    padding: 0 5px 0 10px;
+}
+
+.GreenText {
+    color: Green;
+}
+
+.RedText {
+    color: Red;
+}
+
+.up_green {
+    background: url(http://www.codescratcher.com/wp-content/uploads/2014/11/up.gif) no-repeat left center;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.down_red {
+    background: url(http://www.codescratcher.com/wp-content/uploads/2014/11/down.gif) no-repeat left center;
+    padding-left: 10px;
+    margin-right: 5px;
+}
