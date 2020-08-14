@@ -1,0 +1,40 @@
+.max-height {
+    min-height: 100vh;
+}
+
+body {
+    background: white;
+    .example::-webkit-scrollbar {
+        display: none;
+      }
+    .example {
+        -ms-overflow-style: none;
+      }
+}
+
+.quote-container {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#generate-btn {
+    color: white !important;
+    background: #00c000 !important;
+    border-color: #00c000 !important;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#generate-btn:hover {
+    background: #1ba000 !important;
+    border-color: #1ba000 !important;
+    color: white !important;
+}
+
+.author {
+    color: #00c000;
+}
+
+h1 {
+    color: #00c000;
+}

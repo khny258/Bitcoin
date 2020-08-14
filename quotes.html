@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+
+
+
+
+    <title>Bitcoin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+
+    <!-- meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jquery and bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- script js -->
+    <script src="scripts/app.js"></script>
+
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><strong>Bitcoin</strong><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="https://analytics.skew.com/dashboard/bitcoin-futures" target="_blank">Bitcoin Futures</a>
+                        <a class="dropdown-item" href="https://bitcoinjs-guide.bitcoin-studio.com/bitcoinjs-guide/v5/" target="_blank">Bitcoin Programming</a>
+                        <a class="dropdown-item" href="https://bitcointalk.org/" target="_blank">Bitcointalk (Bitcoin Forum)</a>
+                        <a class="dropdown-item" href="https://bitcoin.org/bitcoin.pdf" target="_blank">Bitcoin Whitepaper</a>
+                        <a class="dropdown-item" href="https://www.citadel21.com/" target="_blank">Citadel21</a>
+                        <a class="dropdown-item" href="https://www.coinbase.com/join/huang_34" target="_blank">Coinbase</a>
+                        <a class="dropdown-item" href="https://www.coinmarketcap.com/" target="_blank">CoinMarketCap</a>
+                        <a class="dropdown-item" href="https://www.cointracker.io/" target="_blank">CoinTracker</a>
+                        <a class="dropdown-item" href="https://store.coinkite.com/store/coldcard" target="_blank">Coldcard Wallet</a>
+                        <a class="dropdown-item" href="https://cryptowat.ch/" target="_blank">Cryptowatch</a>
+                        <a class="dropdown-item" href="https://electrum.org/#home" target="_blank">Electrum Wallet</a>
+                        <a class="dropdown-item" href="https://lolli.com/ref/uZAmmsyJSH" target="_blank">Lolli: Earn Free Bitcoin When You Shop Online!</a>
+                        <a class="dropdown-item" href="https://mynodebtc.com/" target="_blank">myNode</a>
+                        <a class="dropdown-item" href="https://samouraiwallet.com/" target="_blank">Samourai Wallet</a>
+                        <a class="dropdown-item" href="https://wallet.trezor.io/#/" target="_blank">Trezor Wallet</a>
+                        <a class="dropdown-item" href="https://walletsrecovery.org/" target="_blank">Wallets Recovery</a>
+                        <a class="dropdown-item" href="https://www.wasabiwallet.io/" target="_blank">Wasabi Wallet</a>
+                        <a class="dropdown-item" href="http://charts.woobull.com/" target="_blank">Woobull Charts</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://bitcoin.clarkmoody.com/dashboard/" target="_blank">Bitcoin Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blockstream.info/" target="_blank">Bitcoin Explorer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://mempool.space/" target="_blank">Bitcoin Mempool</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="podcasts.html">Bitcoin Podcasts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quotes.html">Bitcoin Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wallets.html">Bitcoin Wallets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="crypto">
+        <!-- beginning of bootstrap layout -->
+        <div class="card">
+
+            <div class="card-body">
+                <form id="search" class="container container-fluid form-group">
+                    <center><img src="https://images.vexels.com/media/users/3/144838/isolated/preview/0e8ecc882dcf98521ef01d2163416fc9-bitcoin-logo-by-vexels.png" width="15%" height="15%">
+                      <div class="container">
+                          <div class="align-items-center">
+                              <div class="col-11 mx-auto col-md-6 quote-container p-5">
+                                  <button class="btn-outline-primary text-capitalize my-4 d-block mx-auto" id="generate-btn">generate quote</button>
+                  
+                                  <h3 class="text-muted"><span class="quote-icon mr-3"><i class="fas fa-quote-left fa-3x"></i></span><span id="quote">“I think the internet is going to be one of the major forces for reducing the role of government. The one thing that’s missing but that will soon be developed, is a reliable e-cash.”
+                            </span></i></span></h3>
+                                  <h5 class="text-right text-capitalize author">-<span class="quote-author ml-3 ">Professor Milton Friedman, a Nobel Prize winner in economics</span></h5>
+                              </div>
+                  
+                          </div>
+                      </div>
+                        
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
