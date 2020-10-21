@@ -12,6 +12,16 @@ body {
       }
 }
 
+a { color:#000000;
+    text-decoration:none;
+    }
+    
+a:hover {
+    color:#000000;
+    text-decoration : none;
+    }
+    
+
 .quote-container {
     background: rgba(255, 255, 255, 0.5);
 }
